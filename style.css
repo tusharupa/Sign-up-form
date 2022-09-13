@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    /* height: 100%; */
+    height: 100vh;
+    font-size: 20px;
+}
+@font-face {
+    font-family: norse;
+    src: url("/font/Norse-Bold.otf");
+}
+body{
+    display: flex;
+    font-family: montserrat,sans-serif;
+}
+.image-sidebar{
+    border: 1px solid black;
+    flex-grow: 1;
+    display: flex;
+    background-image: url("/images/valentin-beauvais-new-unsplash.jpg");
+    justify-content: center;
+   
+      
+}
+.image-sidebar .logo{ 
+    min-width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 25%;
+    margin-top: 6rem;
+background-color: rgba(0, 0, 0, 0.6);
+    
+}
+.logo img{
+    object-fit: contain;
+    max-height: 100%;
+    
+}
+.logo h1{
+    
+    color: white;
+    font-family: norse,sans-serif;
+    font-size: 5rem;
+    max-height: 100%;
+    padding: 2 rem;
+
+}
+
+.form-container{
+    border: 1px solid black;
+    flex-grow: 3;
+    flex-basis: 0;  
+    display: flex;
+    flex-direction: column;
+}
+.form-container .header{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgb(225, 226, 226);
+}
+.header > p{
+    font-size: 1.3rem;
+    padding: 16px;
+    margin-left: 2rem;
+}
+.header .intro{
+    margin-right: 8rem;
+}
+.middle{
+    display: flex;
+    flex-wrap: wrap;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+}
+#form .upper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 16px;
+    margin-left: 2rem;
+    justify-content: space-between;
+   
+}
+.upper .user{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width:40% ;
+    min-width: 150px;
+    margin-right: 30px;
+    color: rgb(20, 20, 75);
+    font-weight: 600;
+}
+#form input{
+    width: 100%;
+    padding: 3px 5px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border-color: rgb(165, 165, 165);
+
+}
+#form .lower{
+    padding: 16px;
+    margin-left: 2rem;
+}
+.lower p{
+    display: none;
+    font-size: 16px;
+    text-align: center;
+    color: red;
+}
+.lower button{
+    font-size: 1.2rem;
+    padding: 8px 20px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 5px;
+}
+.form-container .footer{
+    background-color: rgb(190, 190, 229);
+    flex: 1;
+}
+.footer p{
+    margin-left: 1.2rem;
+    font-size: 1.2rem;
+    padding: 16px;
+}
+.footer strong{
+    color: green;
+    cursor: pointer;
+}
